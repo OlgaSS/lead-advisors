@@ -1,0 +1,35 @@
+.header {
+    position: absolute;
+    top: 110px;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    &.animation {
+        transform: translate(0, -40%);
+        opacity: 0;
+        transition: all .8s ease 0s;
+
+        &.show {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+    }
+
+    @media(max-width: 1440px) {
+        top: 98px;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__logo {
+        @media(max-width: 550px) {
+            img {
+                width: 128px;
+            }
+        }
+    }
+}
