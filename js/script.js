@@ -112,7 +112,7 @@ const getSubscription = () => {
                 email: email
             };
             form.reset();
-            sendEmail(newPost)
+            renderModal('SUCCESS', 'You have successfully subscribed to the email newsletter')
         }
     })
 }
