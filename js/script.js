@@ -76,6 +76,7 @@ openAccordion();
 
 // Free fake API
 const API_URL = 'http://jsonplaceholder.typicode.com/posts';
+
 // Отправку данных
 const getSubscription = () => {
     const form = document.querySelector('.form-notify');
