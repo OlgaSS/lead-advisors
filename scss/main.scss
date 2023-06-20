@@ -143,7 +143,6 @@
     }
 
     &__counter {
-
         &.animation {
             transform: translate(0, -20%);
             opacity: 0;
@@ -459,6 +458,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        transition: all .3s ease;
+
+        @media (any-hover: hover) {
+            &:hover {
+                background: $blue;
+            }
+        }
 
         @media(max-width: 1440px) {
             width: 33px;
